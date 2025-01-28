@@ -19,7 +19,7 @@ class BasicAgent(Agent):
         return self.format_output(results)
     
 if __name__ == "__main__":
-    llm = OpenAIProvider(model="gpt-3.5-turbo", api_key=os.environ["OPENAI_API_KEY"])
+    llm = OpenAIProvider(model="gpt-3.5-turbo", api_key="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")
     tools = ToolRegistry()
     memory = ShortTermMemory()
     
