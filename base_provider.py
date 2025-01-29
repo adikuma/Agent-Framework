@@ -1,9 +1,7 @@
 from abc import ABC, abstractmethod
-from typing import Any, List
+from typing import List, Dict
 
-# base provider
 class BaseProvider(ABC):
     @abstractmethod
-    def generate_response(self, item: Any):
+    def generate(self, messages: List[Dict]) -> str:
         pass
-
