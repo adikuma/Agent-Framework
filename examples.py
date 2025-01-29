@@ -24,7 +24,7 @@ output_schema = {
 }
 
 agent = Agent(
-    llm_provider=OpenAIProvider(model = "gpt-3.5-turbo", api_key = "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"),
+    llm_provider=OpenAIProvider(model = "gpt-3.5-turbo", api_key = "openai_api_key"),
     tools=tools,
     output_schema=output_schema
 )
